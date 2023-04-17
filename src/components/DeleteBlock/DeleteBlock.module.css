@@ -1,0 +1,46 @@
+.box_delete {
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+.delete_completed {
+    width: 200px;
+    height: 39px;
+    background-color: #6C757D;
+    margin: 18px 201px 18px 24px;
+    background-color: darkred;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.delete_completed:hover {
+    background-color: red;
+}
+
+.delete_all {
+    width: 131px;
+    height: 39px;
+    background-color: #DC3545;
+    background-color: darkred;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete_all:hover {
+    background-color: red;
+}
+
+/* button {
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+} */
