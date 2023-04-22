@@ -1,37 +1,34 @@
-import React, { useState } from 'react'
-import s from './Task.module.css'
-import cross from './cross.png'
-import { IoIosColorPalette } from 'react-icons/io'
+import { useState } from 'react';
+import s from './Task.module.css';
+import cross from './important.svg';
+import importnt from './important.svg';
+import importnt2 from './important2.svg'
+const Task = ({ value, deleteTask, id, doneTask, isDone, }) => {
 
-const Task = ({ value, deleteTask, id, doneTask, isDone }) => {
-  const [isColorChanged, setIsColorChanged] = useState(false); 
+  const [important, setImportant] = useState(false);
 
-  const handleColorChange = () => {
-    setIsColorChanged(!isColorChanged); 
+  const onImportant = () => {
+    setImportant((current) => !current)
   }
 
+
   return (
-    <li className={s.box_task}>
+    <li
+      className={important ? s.red : s.box_task}
+
+    >
       <label>
         <input type="checkbox"
           className={s.check}
           checked={isDone}
           onClick={() => doneTask(id)}
         />
-        <p className={`${isDone ? s.box_task_done : null} ${isColorChanged ? s.color_changed : null}`}>{value}</p>
-        {}
+        <p className={`${isDone ? s.box_task_done : null}`}>{value}</p>
       </label>
-      <button className={s.cross} onClick={() => deleteTask(id)}>
-        <img className={s.img} src={cross} alt="" />
+      <button className={important ? s.cross1 : s.cross} onClick={() => deleteTask(id)}>
+        <img className={s.img} src={cross} alt='' />
       </button>
-      <button
-        className={s.color_txt}
-        checked={isDone}
-        onClick={handleColorChange} 
-      >
-        <IoIosColorPalette />
-      </button>
-      <p className={`${isDone ? s.color_txt : null}`}></p>
+      <button onClick={onImportant} className={important ? s.important_btn1 : s.important_btn}><img src={important ? importnt2 : importnt} alt="" /></button>
     </li>
   )
 }

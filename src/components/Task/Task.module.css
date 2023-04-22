@@ -47,3 +47,83 @@
     color: red; 
     
   }
+
+
+  .important_btn1{
+    background-color: rgb(19, 238, 128);
+   transition: 3s;
+    border: none;
+}
+
+.box_task_important{
+    background-color: #fff;
+    border: none;
+   
+}
+
+.cross {
+    margin-right: 24px;
+    margin-left: auto;
+    background-color: white;
+    size: 16px;
+    border: none;
+}
+.cross1{
+    margin-right: 24px;
+    margin-left: auto;
+    background-color: rgb(19, 238, 128) ;
+   transition: 3s;
+
+    size: 16px;
+    border: none;
+
+
+}
+
+.img {
+pointer-events: none;
+display: block;
+}
+
+.red {
+    background: red;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    color: black;
+   transition: 3s;
+   border: none;
+
+}
+
+.check {
+    margin: 0 16px 0px 24px;
+    accent-color: #7749F8;
+}
+.important_btn{
+    background-color: white;
+    border: none;
+}
+.important_btn1{
+    background-color: none;
+   transition: 3s;
+    border: none;
+}
+.checked {
+  color: orange;
+}
+
+.Task_red__X-x5N {
+    background: red;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    color: black;
+    transition: 3s;
+}
+
+button {
+    background: none;
+}
